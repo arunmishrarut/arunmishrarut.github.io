@@ -219,5 +219,92 @@ body {
 }
 
 
+.skills-section {
+  margin-top: 2rem;
+}
+
+.skills-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.skills-grid h4 {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  margin-bottom: 0.3rem;
+}
+
+.skills-grid p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0;
+}
 
 
+.content-box {
+  width: 100%;
+  height: 100%;
+  padding-right: 1rem;
+  background-color: #ffffff;
+}
+
+.hero-section {
+  margin-bottom: 2rem;
+}
+
+.hero-section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.tagline {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.section-block {
+  margin-top: 3rem;
+}
+
+.section-block h2 {
+  font-size: 1.6rem;
+  color: #1a1a1a;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+}
+
+.exp-grid > div {
+  margin-bottom: 2rem;
+}
+
+.exp-grid ul,
+.project-list {
+  padding-left: 1.2rem;
+}
+
+.exp-grid li,
+.project-list li {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.edu-grid > div {
+  margin-bottom: 1.5rem;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
