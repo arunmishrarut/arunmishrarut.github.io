@@ -1,0 +1,138 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <header class="floating-nav">
+    <nav>
+      <ul class="nav-options">
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#projects-panel">Projects</a></li>
+        <!-- Changed this from external link to an in‑page anchor -->
+        <li><a href="#resume-panel">Resume</a></li>
+        <li><a href="#home-panel">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN LAYOUT -->
+  <div class="layout">
+    <aside class="sidebar">
+      <img id="profile-img" src="" alt="Profile Photo" class="profile-img" />
+      <h1 id="name">Your Name</h1>
+      <p id="bio">Your short bio goes here.</p>
+      <div class="contact-info">
+        <div><strong>GitHub:</strong> <a id="github" href="" target="_blank">@yourgithub</a></div>
+        <div><strong>Email:</strong> <a id="email" href="mailto:">youremail@example.com</a></div>
+        <div><strong>Location:</strong> <span id="location">Your City</span></div>
+      </div>
+    </aside>
+
+    <div class="right-panel">
+        <!-- Home Panel -->
+        <section class="panel home-panel" id="home-panel">
+          <h2>Summary</h2>
+          <p class="home-text">
+            Data Scientist & Data Analyst with a solid foundation in statistics, machine learning, and end-to-end data pipeline development. Proven expertise in deploying scalable data solutions, automating analytical workflows, and generating actionable business insights across diverse industries. Passionate about solving complex problems using predictive modeling, natural language processing (NLP), and advanced data science methodologies.
+          </p>
+
+          <h2>Education & Relevant Coursework</h2>
+
+          <p>
+            <strong>Master of Science, Statistics – Data Science                  Dual B.Tech + M.Tech, Technology & Data Science</strong><br/>
+            Indian Institute of              Technology – Dhanbad, India (May 2018)
+            Rutgers University, New Brunswick, NJ (Dec 2024)
+          
+            
+          </p>
+        
+          <h3>Relevant Coursework</h3>
+          <ul class="home-highlights">
+            <li>
+              <strong>Statistical Models and Computing</strong> (16:954:567) – Advanced statistical models & computing methods for data‑science (linear/logistic regression, GLMs, Bayesian MCMC) :contentReference[oaicite:0]{index=0}
+            </li>
+            <li>
+              <strong>Data Wrangling and Husbandry</strong> (16:954:597) – Principles and tools to retrieve, tidy, clean and visualize data in preparation for analysis :contentReference[oaicite:1]{index=1}
+            </li>
+            <li>
+              <strong>Introduction to Data Structures and Algorithms</strong> (16:198:512) – Core algorithms & data structures with complexity analysis :contentReference[oaicite:2]{index=2}
+            </li>
+            <li>
+              <strong>Probability and Statistical Inference for Data Science</strong> (16:954:581) – Probabilistic foundations, Bayesian inference, multiple testing & false‑discovery rates :contentReference[oaicite:3]{index=3}
+            </li>
+            <li>
+              <strong>Regression and Time Series Analysis for Data Science</strong> (16:954:596) – Regression methods, state‑space and volatility models for time‑series data :contentReference[oaicite:4]{index=4}
+            </li>
+            <li>
+              <strong>Statistical Learning for Data Science</strong> (16:954:534) – Supervised & unsupervised learning, trees, random forests, deep learning, graphical models :contentReference[oaicite:5]{index=5}
+            </li>
+            <li>
+              <strong>Advanced Methods for Risk Management Practice</strong> (16:958:534) – Analytics in market, credit, operational & liquidity risk domains :contentReference[oaicite:6]{index=6}
+            </li>
+            <li>
+              <strong>Financial Data Mining</strong> (16:958:588) – Descriptive & predictive data mining algorithms, pattern discovery, text mining :contentReference[oaicite:7]{index=7}
+            </li>
+            <li>
+              <strong>Advanced Programming for Financial Statistics and Risk Management</strong> (16:958:589) – Object‑oriented Python for interactive financial analytics & application building :contentReference[oaicite:8]{index=8}
+            </li>
+          </ul>
+
+        
+        <ul class="home-highlights">
+          <li><strong>M.Sc. in Statistics – Data Science</strong> from Rutgers University (Dec 2024) and Dual B.Tech + M.Tech from IIT Dhanbad (May 2018). :contentReference[oaicite:0]{index=0}&#8203;:contentReference[oaicite:1]{index=1}</li>
+          <li>Automated reagent dosing in a froth flotation circuit using multiple linear regression—boosted process efficiency and cut manual intervention. :contentReference[oaicite:2]{index=2}&#8203;:contentReference[oaicite:3]{index=3}</li>
+          <li>Designed and deployed AWS‑based data pipelines and Power BI dashboards to visualize production metrics, downtime analysis, and water‐use optimization (9.5% reduction). :contentReference[oaicite:4]{index=4}&#8203;:contentReference[oaicite:5]{index=5}</li>
+          <li>Built a credit‑card fraud detection ensemble (SVM + Random Forest) achieving 0.71 recall / 0.90 precision on highly imbalanced data. :contentReference[oaicite:6]{index=6}&#8203;:contentReference[oaicite:7]{index=7}</li>
+          <li>Led “Vakta [Orator]” public‑speaking club at IIT‑ISM, coaching 100+ students in mock interviews and presentations. :contentReference[oaicite:8]{index=8}&#8203;:contentReference[oaicite:9]{index=9}</li>
+        </ul>
+        <p>
+          <a href="#resume-panel" class="resume-download">View/Download Full Resume</a>
+        </p>
+
+        </section>
+
+        
+
+
+        <!-- Projects Panel -->
+        <section class="panel projects-panel" id="projects-panel">
+          <h2>My Projects</h2>
+          <p class="subtitle">GitHub repositories that I've built.</p>
+          <div id="projects-container" class="projects-grid"></div>
+        </section>
+
+        <!-- **Resume Panel** -->
+        <section class="panel resume-panel" id="resume-panel">
+          <h2>My Resume</h2>
+          <!-- Download button, using Google Drive direct‑download link -->
+          <a
+            href="https://drive.google.com/uc?export=download&id=1t2o5R5q1HIG8ZpdivflfYDJNIRhuUyIL"
+            download
+            class="resume-download"
+          >
+            Download Resume
+          </a>
+          
+        
+        
+          <div class="resume-container">
+            <iframe
+              id="resume-iframe"
+              src="https://drive.google.com/file/d/1t2o5R5q1HIG8ZpdivflfYDJNIRhuUyIL/preview"
+              type="application/pdf"
+            ></iframe>
+          </div>
+        </section>      
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

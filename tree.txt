@@ -1,0 +1,8 @@
+/portfolio-website
+  ├── index.html
+  ├── styles.css
+  ├── script.js
+  ├── /assets
+      ├── profile.jpg       ← your profile photo
+      ├── favicon.ico       ← optional: browser tab icon
+      └── logo.png          ← optional: personal or brand logo

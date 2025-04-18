@@ -1,0 +1,223 @@
+/* styles.css */
+
+/* Global */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #fff;
+  color: #24292e;
+  overflow: auto;
+  height: 100vh;
+}
+
+/* Layout */
+.layout {
+  display: flex;
+  min-height: 100vh;
+   /* Prevent full-page scroll */
+}
+
+/* Sidebar 
+.sidebar {
+  width: 200px;
+  padding: 2rem;
+  background-color: #f1f3f4;
+  flex-shrink: 0;
+  height: 100vh; /* Full height 
+  position: sticky;
+  top: 0; /* Make it fixed on scroll 
+  overflow: hidden;
+}
+
+
+/* Navigation */
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  padding: 2rem;
+  background-color: #f1f3f4 ;
+  position: fixed;
+  top: 0; left: 0; z-index: 100;
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-start;
+  /*background:black;*/
+}
+
+
+
+
+
+
+/*
+.right-panel {
+  height: calc(100vh - 15rem); /* if your .floating-nav is really 4.5rem high 
+  overflow: auto;
+}
+*/
+
+
+
+
+
+
+/* Right‑panel wrapper */
+.right-panel {
+  position: relative;
+  width: 100%;
+  flex-grow: auto;
+  background-color: #ffffff;
+  /* Remove padding-left from panel */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* Add margin instead of padding for layout spacing */
+  margin-left: 250px; /* Matches floating panel width */
+  overflow: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+.profile-img { width: 150px; height: 150px; border-radius: 75px; margin-bottom: 1rem; }
+.sidebar h1 { font-size: 1.5rem; margin: 0.5rem 0; }
+.sidebar p { font-size: 14px; color: #586069; }
+.contact-info { margin-top: 1rem; font-size: 14px; }
+.contact-info a { color: #1a73e8; text-decoration: none; }
+
+/* Navigation */
+.floating-nav {
+  width: 100%;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  position: fixed;
+  top: 0; left: 0; z-index: 100;
+  display: flex; justify-content: flex-end;
+  background: #ffffff;;
+}
+
+
+.nav-options {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0; padding: 0;
+  padding-top: 0.5rem; padding-right: 10rem;
+}
+.nav-options li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  color: #0366d6;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.nav-options li a:hover {
+  background-color: rgba(3,102,214,0.1);
+  color: #023169;
+}
+
+
+
+
+
+/* Panels */
+.panel {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  padding: 2rem;
+  background-color: #ffffff;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Home (start in view) */
+#home-panel {
+  transform: translateX(0);    
+  background: #ffffff;
+  padding: 3.2rem;
+
+}
+/* slide-left pushes it off to the left */
+#home-panel.slide-left { transform: translateX(-100%); }
+
+/* Projects (start off to the right) */
+#projects-panel           { transform: translateX(100%); }
+/* slide-in brings it back to 0 */
+#projects-panel.slide-in  { transform: translateX(0);     }
+
+/* Resume (same as Projects) */
+#resume-panel            { transform: translateX(100%); }
+#resume-panel.slide-in   { transform: translateX(0);     }
+
+/* Content styling */
+.subtitle      { color: #586069; margin-bottom: 1rem; }
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+  gap: 1rem;
+}
+.project-card {
+  background: #fff;
+  border: 1px solid #e1e4e8;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(27,31,35,0.04);
+  transition: box-shadow 0.2s ease;
+}
+.project-card:hover {
+  box-shadow: 0 4px 12px rgba(27,31,35,0.15);
+}
+.project-card h3 { margin:0 0 0.5rem; color:#1a73e8; }
+.project-card p  { font-size:14px; color:#586069; }
+.project-link    { text-decoration:none; color:inherit; display:block; }
+.meta            { margin-top:0.5rem; font-size:13px; display:flex; gap:10px; color:#586069; }
+.language        { font-weight:bold; }
+
+/* Home‑text (was about‑text) */
+.home-text {
+  font-size: 16px;
+  color: #24292e;
+  line-height: 1.6;
+}
+
+
+/* Resume iframe container */
+.resume-container {
+  box-sizing: border-box;     /* include padding in the width/height */
+  padding: 1rem 2.5rem 0 0;   /* top: .5rem, right: 1rem, bottom: 0, left: 0 */
+  
+  width: 100%;
+  height: 78%;/* leave room for the <h2> title */
+  
+}
+.resume-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ---- Download button under resume ---- */
+.resume-download {
+  display: inline-block;
+  margin: 0 0 0.2rem 0;         /* space above & below */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  color: #0366d6;
+  padding: 0rem 1rem;
+  border-radius: 20px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.resume-download:hover {
+  background-color: rgba(3, 102, 214, 0.1);
+  color: #023169;
+}
+
+
+
+
