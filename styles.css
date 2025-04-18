@@ -145,12 +145,24 @@ body {
 #home-panel.slide-left { transform: translateX(-100%); }
 
 /* Projects (start off to the right) */
-#projects-panel           { transform: translateX(100%); }
+#projects-panel{
+  transform: translateX(100%); 
+  background: #ffffff;
+  padding: 3.2rem;
+
+}
 /* slide-in brings it back to 0 */
 #projects-panel.slide-in  { transform: translateX(0);     }
 
 /* Resume (same as Projects) */
-#resume-panel            { transform: translateX(100%); }
+#resume-panel{
+  transform: translateX(100%);
+  background: #ffffff;
+  padding: 3.2rem;
+  overflow-y: hidden;
+
+
+}
 #resume-panel.slide-in   { transform: translateX(0);     }
 
 /* Content styling */
