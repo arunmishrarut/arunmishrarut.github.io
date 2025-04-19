@@ -9,7 +9,7 @@ const profileData = {
 };
 
 const projects = [
-  { name: "personal-website", description: "Kickstart a personal website...", language: "HTML", stars: 4925, forks: 3324, link: "https://github.com/johndoe/personal-website" },
+  { name: "personal-website", description: "Kickstart a personal website...", language: "HTML", stars: 4925, forks: 3324, link: "https://github.com/arunmishrarut/Portfolio-website-using-JS-HTML-css.git" },
   { name: "time-elements",      description: "Web component extensions...", language: "JavaScript", stars: 1698, forks: 98,    link: "https://github.com/johndoe/time-elements" },
   { name: "opensource.guide",   description: "Community guides for...",    language: "JavaScript", stars: 5516, forks: 3984,  link: "https://github.com/johndoe/opensource.guide" }
 ];
