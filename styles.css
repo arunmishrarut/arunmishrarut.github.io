@@ -32,7 +32,7 @@ body {
 
 /* Navigation */
 .sidebar {
-  width: 200px;
+  width: 11.5rem;
   height: 100vh;
   padding: 2rem;
   background-color: #f1f3f4 ;
@@ -59,6 +59,16 @@ body {
 
 
 
+/* Panels */
+.panel {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  padding: 2rem;
+  background-color: #ffffff;
+  transition: transform 0.4s ease-in-out;
+}
+
 
 
 /* Right‑panel wrapper */
@@ -67,15 +77,19 @@ body {
   width: 100%;
   flex-grow: auto;
   background-color: #ffffff;
+  margin: 1.5rem 0rem 2rem 14.7rem;
+ 
+  
   /* Remove padding-left from panel */
   display: flex;
   justify-content: center;
   align-items: flex-start;
   /* Add margin instead of padding for layout spacing */
-  margin-left: 250px; /* Matches floating panel width */
+  /* Matches floating panel width */
   overflow: auto;
   overflow-x: hidden;
   scroll-behavior: smooth;
+ 
 }
 
 
@@ -124,21 +138,12 @@ body {
 
 
 
-/* Panels */
-.panel {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  padding: 2rem;
-  background-color: #ffffff;
-  transition: transform 0.5s ease-in-out;
-}
-
 /* Home (start in view) */
 #home-panel {
   transform: translateX(0);    
   background: #ffffff;
-  padding: 2.1rem;
+  padding-right: 5rem;
+  
 
 }
 /* slide-left pushes it off to the left */
@@ -148,8 +153,8 @@ body {
 #projects-panel{
   transform: translateX(100%); 
   background: #ffffff;
-  padding: 2.1rem;
-  padding-right: 6.5rem;
+  
+ 
 
 }
 /* slide-in brings it back to 0 */
@@ -395,3 +400,10 @@ body {
   color: #888;
   margin-bottom: 0.5rem;
 }
+
+
+
+
+
+
+

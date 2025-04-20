@@ -1,7 +1,7 @@
 // script.js
 const profileData = {
   name: "Arun Mishra",
-  bio: "Data Scientist and Data Analyst ",
+  bio: "Data Scientist | Data Analyst ",
   github: "arunmishrarut",
   email: "john@example.com",
   location: "San Francisco, CA",
@@ -18,49 +18,49 @@ const projects = [
   {
     "name": "Portfolio-website-using-JS-HTML-CSS",
     "description": "Designed and deployed a responsive personal portfolio website using HTML, CSS, and JavaScript.",
-    "language": ["HTML", "JavaScript", "CSS"],
+    "language": ["HTML", "CSS", "JavaScript", "Responsive Design", "Flexbox", "Media Queries", "DOM Manipulation"],
     "link": "https://github.com/arunmishrarut/Portfolio-website-using-JS-HTML-css.git"
   },
   {
     "name": "Ensembled-Model-Credit-Card-Fraud-Detection",
     "description": "Developed an ensemble ML model to detect fraudulent credit card transactions with improved precision.",
-    "language": ["Python", "Jupyter Notebook"],
+    "language": ["Python", "Jupyter Notebook", "XGBoost", "Random Forest", "SMOTE", "Scikit-learn", "Pandas", "Seaborn"],
     "link": "https://github.com/arunmishrarut/ensembled_model_credit_card_fraud_detection"
   },
   {
     "name": "Bellman-Conformal-Inference-BCI-Time-Series-Prediction",
     "description": "Implemented Bellman Conformal Inference to generate reliable prediction intervals for time series forecasting.",
-    "language": ["Python"],
+    "language": ["Python", "Conformal Prediction", "Bellman Equation", "Scikit-learn", "Statsmodels"],
     "link": "https://github.com/arunmishrarut/Bellman_Conformal_Inference_BCI_Time_Series_Prediction"
   },
   {
     "name": "Dengue-Prediction-Model",
     "description": "Built regression-based models to predict dengue outbreaks using historical and environmental data.",
-    "language": ["Python", "Jupyter Notebook"],
+    "language": ["Python", "Jupyter Notebook", "Linear Regression", "Random Forest", "Pandas", "Matplotlib", "Scikit-learn"],
     "link": "https://github.com/arunmishrarut/Dengue_Prediction_Model"
   },
   {
     "name": "Regression-Analysis-on-Household-Victimization",
     "description": "Performed regression analysis to identify key factors associated with household victimization rates.",
-    "language": ["Python"],
+    "language": ["Python", "OLS Regression", "Pandas", "Matplotlib", "Seaborn", "Statsmodels"],
     "link": "https://github.com/arunmishrarut/Regression_Analysis_on_Household_Victimization"
   },
   {
     "name": "Bayesian-Logistic-Regression-for-Diabetes-Prediction",
     "description": "Applied Bayesian logistic regression to predict diabetes risk while quantifying model uncertainty.",
-    "language": ["Python"],
+    "language": ["Python", "Bayesian Inference", "PyMC3", "Theano", "Scikit-learn", "Pandas"],
     "link": "https://github.com/arunmishrarut/Bayesian_Logistic_Regression_for_Diabetes_Prediction"
   },
   {
     "name": "Twitter-Search-App",
     "description": "Built a Python-based search interface leveraging the Twitter API to retrieve and display real-time tweets.",
-    "language": ["Python", "Jupyter Notebook"],
+    "language": ["Python", "Jupyter Notebook", "Tweepy", "Twitter API", "Pandas", "Streamlit"],
     "link": "https://github.com/arunmishrarut/Twitter_Search_App"
   },
   {
     "name": "Sentiment-Analysis-of-Popular-Songs-Lyrics",
     "description": "Performed sentiment analysis on song lyrics to uncover emotional trends across popular music.",
-    "language": ["R"],
+    "language": ["R", "tidytext", "ggplot2", "dplyr", "tm", "wordcloud"],
     "link": "https://github.com/arunmishrarut/Sentiment_Analysis_of_Popular_Songs-Lyrics-"
   }
 ];
