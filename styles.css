@@ -378,6 +378,61 @@ body {
 
 
 
+/* ========================= */
+/* MOBILE STYLES - Responsive Design */
+/* ========================= */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .floating-nav {
+    justify-content: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .nav-options {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .right-panel {
+    margin: 0;
+    padding: 1.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-container {
+    height: auto;
+  }
+
+  iframe#resume-iframe {
+    height: 60vh;
+  }
+}
+
+
+
 
 
 
