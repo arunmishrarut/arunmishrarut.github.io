@@ -9,10 +9,63 @@ const profileData = {
 };
 
 const projects = [
-  { name: "personal-website", description: "Kickstart a personal website...", language: "HTML", stars: 4925, forks: 3324, link: "https://github.com/arunmishrarut/Portfolio-website-using-JS-HTML-css.git" },
-  { name: "time-elements",      description: "Web component extensions...", language: "JavaScript", stars: 1698, forks: 98,    link: "https://github.com/johndoe/time-elements" },
-  { name: "opensource.guide",   description: "Community guides for...",    language: "JavaScript", stars: 5516, forks: 3984,  link: "https://github.com/johndoe/opensource.guide" }
+  {
+    "name": "Diffusion-Models-Time-Series-Forecasting",
+    "description": "Built generative diffusion-based models to forecast complex time series patterns with higher accuracy.",
+    "language": ["Python", "Jupyter Notebook", "PyTorch", "Diffusion Models", "NumPy", "Pandas", "Matplotlib"],
+    "link": "https://github.com/rohit-vernekar/Diffusion-Models-Time-Series-Forecasting"
+  },
+  {
+    "name": "Portfolio-website-using-JS-HTML-CSS",
+    "description": "Designed and deployed a responsive personal portfolio website using HTML, CSS, and JavaScript.",
+    "language": ["HTML", "JavaScript", "CSS"],
+    "link": "https://github.com/arunmishrarut/Portfolio-website-using-JS-HTML-css.git"
+  },
+  {
+    "name": "Ensembled-Model-Credit-Card-Fraud-Detection",
+    "description": "Developed an ensemble ML model to detect fraudulent credit card transactions with improved precision.",
+    "language": ["Python", "Jupyter Notebook"],
+    "link": "https://github.com/arunmishrarut/ensembled_model_credit_card_fraud_detection"
+  },
+  {
+    "name": "Bellman-Conformal-Inference-BCI-Time-Series-Prediction",
+    "description": "Implemented Bellman Conformal Inference to generate reliable prediction intervals for time series forecasting.",
+    "language": ["Python"],
+    "link": "https://github.com/arunmishrarut/Bellman_Conformal_Inference_BCI_Time_Series_Prediction"
+  },
+  {
+    "name": "Dengue-Prediction-Model",
+    "description": "Built regression-based models to predict dengue outbreaks using historical and environmental data.",
+    "language": ["Python", "Jupyter Notebook"],
+    "link": "https://github.com/arunmishrarut/Dengue_Prediction_Model"
+  },
+  {
+    "name": "Regression-Analysis-on-Household-Victimization",
+    "description": "Performed regression analysis to identify key factors associated with household victimization rates.",
+    "language": ["Python"],
+    "link": "https://github.com/arunmishrarut/Regression_Analysis_on_Household_Victimization"
+  },
+  {
+    "name": "Bayesian-Logistic-Regression-for-Diabetes-Prediction",
+    "description": "Applied Bayesian logistic regression to predict diabetes risk while quantifying model uncertainty.",
+    "language": ["Python"],
+    "link": "https://github.com/arunmishrarut/Bayesian_Logistic_Regression_for_Diabetes_Prediction"
+  },
+  {
+    "name": "Twitter-Search-App",
+    "description": "Built a Python-based search interface leveraging the Twitter API to retrieve and display real-time tweets.",
+    "language": ["Python", "Jupyter Notebook"],
+    "link": "https://github.com/arunmishrarut/Twitter_Search_App"
+  },
+  {
+    "name": "Sentiment-Analysis-of-Popular-Songs-Lyrics",
+    "description": "Performed sentiment analysis on song lyrics to uncover emotional trends across popular music.",
+    "language": ["R"],
+    "link": "https://github.com/arunmishrarut/Sentiment_Analysis_of_Popular_Songs-Lyrics-"
+  }
 ];
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
   // Populate profile
@@ -35,9 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <h3>${project.name}</h3>
         <p>${project.description}</p>
         <div class="meta">
-          <span class="language">${project.language}</span>
-          <span>★ ${project.stars}</span>
-          <span>🍴 ${project.forks}</span>
+          <span class="language">${Array.isArray(project.language) ? project.language.join('&nbsp;&nbsp;&nbsp;') : project.language}</span>   
         </div>
       </a>`;
     container.appendChild(card);
