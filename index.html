@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
 </head>
 <body>
+  
 
   <!-- NAVIGATION BAR -->
   <header class="floating-nav">
@@ -178,5 +180,32 @@
   </div>
 
   <script src="script.js"></script>
+  <!-- Fluid effect - Place at the very end -->
+  <script type="module">
+    import webGLFluidEnhanced from "https://esm.run/webgl-fluid-enhanced@latest";
+    
+    // Create canvas
+    const canvas = document.createElement('canvas');
+    canvas.style.position = 'fixed';
+    canvas.style.inset = '0';
+    canvas.style.width = '100vw';
+    canvas.style.height = '100vh';
+    canvas.style.zIndex = '-1';
+    canvas.style.pointerEvents = 'none';
+    document.body.prepend(canvas);
+
+    // Initialize the simulation
+    webGLFluidEnhanced.simulation(canvas, {
+      COLOR_PALETTE: ['#1a73e8', '#586069', '#24292e'],
+      BACK_COLOR: '#fff',
+      HOVER: true,
+      BLOOM: false,
+      BRIGHTNESS: 0.5
+    });
+  </script>
+
+
+ 
+  
 </body>
 </html>
