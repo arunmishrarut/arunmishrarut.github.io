@@ -180,22 +180,20 @@
   </div>
 
   <script src="script.js"></script>
-  <!-- Fluid effect - Place at the very end -->
   <script type="module">
-    import webGLFluidEnhanced from "https://esm.run/webgl-fluid-enhanced@latest";
-    
-    // Create canvas
-    const canvas = document.createElement('canvas');
-    canvas.style.position = 'fixed';
-    canvas.style.inset = '0';
-    canvas.style.width = '100vw';
-    canvas.style.height = '100vh';
-    canvas.style.zIndex = '-1';
-    canvas.style.pointerEvents = 'none';
+    import runFluid from "https://esm.run/webgl-fluid-enhanced";
+
+    const canvas = document.createElement("canvas");
+    canvas.style.position = "fixed";
+    canvas.style.inset = "0";
+    canvas.style.width = "100vw";
+    canvas.style.height = "100vh";
+    canvas.style.zIndex = "-1";
+    canvas.style.pointerEvents = "none";
     document.body.prepend(canvas);
 
-    // Initialize the simulation
-    webGLFluidEnhanced.simulation(canvas, {
+    // Start the animation
+    runFluid(canvas, {
       COLOR_PALETTE: ['#1a73e8', '#586069', '#24292e'],
       BACK_COLOR: '#fff',
       HOVER: true,
@@ -203,6 +201,12 @@
       BRIGHTNESS: 0.5
     });
   </script>
+
+  
+
+ 
+
+
 
 
  
