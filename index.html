@@ -10,196 +10,203 @@
 </head>
 <body>
   
+  <div id="fluid-container" style="position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:100;background:rgba(255,255,255,0);">
 
-  <!-- NAVIGATION BAR -->
-  <header class="floating-nav">
-    <nav>
-      <ul class="nav-options">
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#projects-panel">Projects</a></li>
-        <!-- Changed this from external link to an in‑page anchor -->
-        <li><a href="#resume-panel">Resume</a></li>
-        <li><a href="#home-panel">Home</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- NAVIGATION BAR -->
+    <header class="floating-nav">
+      <nav>
+        <ul class="nav-options">
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#projects-panel">Projects</a></li>
+          <!-- Changed this from external link to an in‑page anchor -->
+          <li><a href="#resume-panel">Resume</a></li>
+          <li><a href="#home-panel">Home</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- MAIN LAYOUT -->
-  <div class="layout">
-    <aside class="sidebar">
-      <img id="profile-img" src="" alt="Profile Photo" class="profile-img" />
-      <h1 id="name">Your Name</h1>
-      <p id="bio">Your short bio goes here.</p>
-      <div class="contact-info">
-        <div><strong>GitHub:</strong> <a id="github" href="" target="_blank">@yourgithub</a></div>
-        <div><strong>Email:</strong> <a id="email" href="mailto:">youremail@example.com</a></div>
-        <div><strong>Location:</strong> <span id="location">Your City</span></div>
-      </div>
-    </aside>
-    <!-- right panel-->
-    <div class="right-panel">
-        <!-- Home Panel -->
-        <section class="panel home-panel active" id="home-panel">
-          <!-- HERO -->
-          <section class="hero-section">
-            
-            <p class="tagline">Data Scientist | Data Analyst | Builder of AI/ML-powered solutions</p>
-            <p class="summary-text">
-              With 4+ years of experience across mining, manufacturing, and research, I specialize in building intelligent data pipelines and deploying machine learning models that drive real-world results. I thrive in cross-functional teams and am passionate about translating complexity into clarity through data.
-            </p>
-          </section>
-        
-          <!-- TECHNICAL SKILLS -->
-          <section class="section-block skills-section">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-              <div>
-                <h4>Artificial Intelligence</h4>
-                <p>Machine Learning, Regression, Classification, NLP, LLMs, Deep Learning</p>
-              </div>
-              <div>
-                <h4>Data Analysis</h4>
-                <p>EDA, Time Series, Forecasting, Hypothesis Testing</p>
-              </div>
-              <div>
-                <h4>Languages & Tools</h4>
-                <p>Python, R, SQL, MySQL, PostgreSQL, MongoDB</p>
-              </div>
-              <div>
-                <h4>Visualization & Cloud</h4>
-                <p>Tableau, Power BI, AWS, Jupyter, Google Colab</p>
-              </div>
-            </div>
-          </section>
-        
-          <!-- EXPERIENCE -->
-          <section class="section-block">
-            <h2>Professional Experience</h2>
-            <div class="exp-grid">
-              <div>
-                <h4>Data Scientist – Vedanta Resources</h4>
-                <p class="date">Jun 2018 – May 2022</p>
-                <ul>
-                  <li>Automated chemical dosing in froth flotation using regression models</li>
-                  <li>Built Power BI dashboards for production, exploration, downtime, and maintenance data</li>
-                  <li>Led data cleaning pipelines using R to enhance data reliability</li>
-                </ul>
-              </div>
-        
-              <div>
-                <h4>Data Analyst – Tata Steel</h4>
-                <p class="date">Apr 2016 – May 2016</p>
-                <ul>
-                  <li>Analyzed water usage data from 2,000+ shifts in a coal beneficiation plant</li>
-                  <li>Reduced fresh water consumption by 9.5% while maintaining plant capacity</li>
-                </ul>
-              </div>
-        
-              <div>
-                <h4>Data Analyst – Hindustan Zinc</h4>
-                <p class="date">Apr 2015 – May 2015</p>
-                <ul>
-                  <li>Built and maintained AWS pipelines for target prediction and real-time analytics</li>
-                  <li>Troubleshot issues in both pipelines and ML models across teams</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-        
-          <!-- PROJECTS -->
-          <section class="section-block">
-            <h2>Research & Projects</h2>
-            <ul class="project-list">
-              <li><strong>Sentiment Analysis of Songs:</strong> Analyzed 169k+ Spotify songs to detect lyrical & energy trends</li>
-              <li><strong>Fraud Detection Model:</strong> SVM + RF ensemble on 284k transactions, achieving 0.90 precision</li>
-              <li><strong>Dengue Outbreak Prediction:</strong> Modeled climate-driven outbreaks in Singapore (2014–18)</li>
-              <li><strong>Household Victimization:</strong> Regression analysis on 4.1M data entries across 2 global crises</li>
-            </ul>
-          </section>
-        
-          <!-- LEADERSHIP -->
-          <section class="section-block">
-            <h2>Leadership & Initiatives</h2>
-            <ul>
-              <li>Elected Placement Representative, IIT(ISM) Dhanbad</li>
-              <li>Founded Vakta (Toastmasters-inspired club) mentoring 100+ students</li>
-              <li>500+ hours of training in speaking, body language, and job readiness</li>
-              <li>Volunteered as a Math teacher at Kartavya NGO (2014–17)</li>
-            </ul>
-          </section>
-        
-          <!-- EDUCATION -->
-          <section class="section-block">
-            <h2>Education</h2>
-            <div class="edu-grid">
-              <div>
-                <h4>Rutgers University</h4>
-                <p>MS in Statistics – Data Science (Expected Dec 2024)</p>
-              </div>
-              <div>
-                <h4>IIT Dhanbad</h4>
-                <p>Dual Degree (BTech + MTech) – Graduated May 2018</p>
-                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
-              </div>
-            </div>
-          </section>
-        </section>
-        
-
-
-        <!-- Projects Panel -->
-        <section class="panel projects-panel" id="projects-panel">
-          <h2>My Projects</h2>
-          <p class="subtitle">GitHub repositories that I've built.</p>
-          <div id="projects-container" class="projects-grid"></div>
-          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
-        </section>
-
-        <!-- **Resume Panel** -->
-        <section class="panel resume-panel" id="resume-panel">
-          <h2>My Resume</h2>
-          <!-- Download button, using Google Drive direct‑download link -->
-          <a
-            href="https://drive.google.com/uc?export=download&id=1t2o5R5q1HIG8ZpdivflfYDJNIRhuUyIL"
-            download
-            class="resume-download"
-          >
-            Download Resume
-          </a>
+    <!-- MAIN LAYOUT -->
+    <div class="layout">
+      <aside class="sidebar">
+        <img id="profile-img" src="" alt="Profile Photo" class="profile-img" />
+        <h1 id="name">Your Name</h1>
+        <p id="bio">Your short bio goes here.</p>
+        <div class="contact-info">
+          <div><strong>GitHub:</strong> <a id="github" href="" target="_blank">@yourgithub</a></div>
+          <div><strong>Email:</strong> <a id="email" href="mailto:">youremail@example.com</a></div>
+          <div><strong>Location:</strong> <span id="location">Your City</span></div>
+        </div>
+      </aside>
+      <!-- right panel-->
+      <div class="right-panel">
+          <!-- Home Panel -->
+          <section class="panel home-panel active" id="home-panel">
+            <!-- HERO -->
+            <section class="hero-section">
+              
+              <p class="tagline">Data Scientist | Data Analyst | Builder of AI/ML-powered solutions</p>
+              <p class="summary-text">
+                With 4+ years of experience across mining, manufacturing, and research, I specialize in building intelligent data pipelines and deploying machine learning models that drive real-world results. I thrive in cross-functional teams and am passionate about translating complexity into clarity through data.
+              </p>
+            </section>
           
-        
-          <div class="resume-container">
-            <iframe
-              id="resume-iframe"
-              src="https://drive.google.com/file/d/1t2o5R5q1HIG8ZpdivflfYDJNIRhuUyIL/view?usp=sharing/preview"
-              type="application/pdf"
-            ></iframe>
-          </div>
-        </section>      
+            <!-- TECHNICAL SKILLS -->
+            <section class="section-block skills-section">
+              <h2>Technical Skills</h2>
+              <div class="skills-grid">
+                <div>
+                  <h4>Artificial Intelligence</h4>
+                  <p>Machine Learning, Regression, Classification, NLP, LLMs, Deep Learning</p>
+                </div>
+                <div>
+                  <h4>Data Analysis</h4>
+                  <p>EDA, Time Series, Forecasting, Hypothesis Testing</p>
+                </div>
+                <div>
+                  <h4>Languages & Tools</h4>
+                  <p>Python, R, SQL, MySQL, PostgreSQL, MongoDB</p>
+                </div>
+                <div>
+                  <h4>Visualization & Cloud</h4>
+                  <p>Tableau, Power BI, AWS, Jupyter, Google Colab</p>
+                </div>
+              </div>
+            </section>
+          
+            <!-- EXPERIENCE -->
+            <section class="section-block">
+              <h2>Professional Experience</h2>
+              <div class="exp-grid">
+                <div>
+                  <h4>Data Scientist – Vedanta Resources</h4>
+                  <p class="date">Jun 2018 – May 2022</p>
+                  <ul>
+                    <li>Automated chemical dosing in froth flotation using regression models</li>
+                    <li>Built Power BI dashboards for production, exploration, downtime, and maintenance data</li>
+                    <li>Led data cleaning pipelines using R to enhance data reliability</li>
+                  </ul>
+                </div>
+          
+                <div>
+                  <h4>Data Analyst – Tata Steel</h4>
+                  <p class="date">Apr 2016 – May 2016</p>
+                  <ul>
+                    <li>Analyzed water usage data from 2,000+ shifts in a coal beneficiation plant</li>
+                    <li>Reduced fresh water consumption by 9.5% while maintaining plant capacity</li>
+                  </ul>
+                </div>
+          
+                <div>
+                  <h4>Data Analyst – Hindustan Zinc</h4>
+                  <p class="date">Apr 2015 – May 2015</p>
+                  <ul>
+                    <li>Built and maintained AWS pipelines for target prediction and real-time analytics</li>
+                    <li>Troubleshot issues in both pipelines and ML models across teams</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          
+            <!-- PROJECTS -->
+            <section class="section-block">
+              <h2>Research & Projects</h2>
+              <ul class="project-list">
+                <li><strong>Sentiment Analysis of Songs:</strong> Analyzed 169k+ Spotify songs to detect lyrical & energy trends</li>
+                <li><strong>Fraud Detection Model:</strong> SVM + RF ensemble on 284k transactions, achieving 0.90 precision</li>
+                <li><strong>Dengue Outbreak Prediction:</strong> Modeled climate-driven outbreaks in Singapore (2014–18)</li>
+                <li><strong>Household Victimization:</strong> Regression analysis on 4.1M data entries across 2 global crises</li>
+              </ul>
+            </section>
+          
+            <!-- LEADERSHIP -->
+            <section class="section-block">
+              <h2>Leadership & Initiatives</h2>
+              <ul>
+                <li>Elected Placement Representative, IIT(ISM) Dhanbad</li>
+                <li>Founded Vakta (Toastmasters-inspired club) mentoring 100+ students</li>
+                <li>500+ hours of training in speaking, body language, and job readiness</li>
+                <li>Volunteered as a Math teacher at Kartavya NGO (2014–17)</li>
+              </ul>
+            </section>
+          
+            <!-- EDUCATION -->
+            <section class="section-block">
+              <h2>Education</h2>
+              <div class="edu-grid">
+                <div>
+                  <h4>Rutgers University</h4>
+                  <p>MS in Statistics – Data Science (Expected Dec 2024)</p>
+                </div>
+                <div>
+                  <h4>IIT Dhanbad</h4>
+                  <p>Dual Degree (BTech + MTech) – Graduated May 2018</p>
+                  <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+                </div>
+              </div>
+            </section>
+          </section>
+          
+
+
+          <!-- Projects Panel -->
+          <section class="panel projects-panel" id="projects-panel">
+            <h2>My Projects</h2>
+            <p class="subtitle">GitHub repositories that I've built.</p>
+            <div id="projects-container" class="projects-grid"></div>
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+          </section>
+
+          <!-- **Resume Panel** -->
+          <section class="panel resume-panel" id="resume-panel">
+            <h2>My Resume</h2>
+            <!-- Download button, using Google Drive direct‑download link -->
+            <a
+              href="https://drive.google.com/uc?export=download&id=1t2o5R5q1HIG8ZpdivflfYDJNIRhuUyIL"
+              download
+              class="resume-download"
+            >
+              Download Resume
+            </a>
+            
+          
+            <div class="resume-container">
+              <iframe
+                id="resume-iframe"
+                src="https://drive.google.com/file/d/1t2o5R5q1HIG8ZpdivflfYDJNIRhuUyIL/view?usp=sharing/preview"
+                type="application/pdf"
+              ></iframe>
+            </div>
+          </section>      
+      </div>
     </div>
   </div>
 
   <script src="script.js"></script>
+  
   <script type="module">
     import WebGLFluidEnhanced from "https://esm.run/webgl-fluid-enhanced@latest";
     
+    // Target the container div instead of creating a new canvas
+    const containerDiv = document.getElementById('fluid-container');
+
+
     // Create the simulation instance
-    const simulation = new WebGLFluidEnhanced();
+    const simulation = new WebGLFluidEnhanced(containerDiv);
     
     // Configure the simulation (before starting)
     simulation.setConfig({
-      colorPalette: ['#0366d6'],
+      colorPalette: ["#0366d6"],
       backgroundColor: '#ffffff',
-      densityDissipation: 3,
-      colorUpdateSpeed: 5,
-      hover: false,
-      brightness: 0.6,
-      velocityDissipation: 0.5,
+      hover: true,
       bloom: false,
+      brightness: 0.50
+      //transparent: fal,
     });
     
     // Start the simulation
     simulation.start();
+    
+    
   </script>
 
  

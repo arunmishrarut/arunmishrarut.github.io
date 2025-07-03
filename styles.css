@@ -18,6 +18,27 @@ body {
 }
 
 
+
+
+.fluid-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: -1000; /* Lower than all content */
+  pointer-events: none; /* So it doesn't block clicks */
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* Navigation */
 .sidebar {
   width: 11.5rem;
@@ -28,6 +49,7 @@ body {
   top: 0; left: 0; z-index: 100;
   display: flex; 
   flex-direction: column;
+  background: rgba(88, 96, 105, 0.5); /* 70% opaque white */
   justify-content: flex-start;
   ;*/
 }
@@ -39,6 +61,7 @@ body {
 /* Panels */
 .panel {
   position: absolute;
+  z-index: 20;  /* ensure panels are above .fluid-container */
   top: 0; left: 0;
   width: 100%; height: 100%;
   padding: 2rem;
@@ -51,13 +74,13 @@ body {
 /* Right‑panel wrapper */
 .right-panel {
   position: relative;
+  z-index: 10; /* must be higher than -100 */
   width: 100%;
   flex-grow: auto;
   background-color: #ffffff;
   margin: 1.5rem 0rem 2rem 14.7rem;
   padding-left: 5rem;
-  
-  
+  background: rgba(88, 96, 105, 0.5); /* 70% opaque white */
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -76,6 +99,15 @@ body {
 .contact-info { margin-top: 1rem; font-size: 14px; }
 .contact-info a { color: #1a73e8; text-decoration: none; }
 
+
+
+
+
+
+
+
+
+
 /* Navigation */
 .floating-nav {
   width: 100%;
@@ -83,8 +115,9 @@ body {
   position: fixed;
   top: 0; left: 0; z-index: 100;
   display: flex; justify-content: flex-end;
-  background: #ffffff;;
+  background: rgba(255, 255, 255, 0.5); /* 70% opaque white */
 }
+
 
 
 .nav-options {
@@ -433,12 +466,4 @@ body {
 
 
 
-/*fluid effect*/
-#fluid-bg {
-  position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  pointer-events: none; /* so it doesn't block clicks */
-}
+y
