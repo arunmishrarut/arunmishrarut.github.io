@@ -1,82 +1,81 @@
 // script.js
-const profileData = {
-  name: "Arun Mishra",
-  bio: "Data Scientist | Data Analyst ",
-  github: "arunmishrarut",
-  email: "john@example.com",
-  location: "San Francisco, CA",
-  profileImg: "assets/profile.jpeg"
-};
-
-const projects = [
-  {
-    "name": "Diffusion-Models-Time-Series-Forecasting",
-    "description": "Built generative diffusion-based models to forecast complex time series patterns with higher accuracy.",
-    "language": ["Python", "Jupyter Notebook", "PyTorch", "Diffusion Models", "NumPy", "Pandas", "Matplotlib"],
-    "link": "https://github.com/rohit-vernekar/Diffusion-Models-Time-Series-Forecasting"
-  },
-  {
-    "name": "Portfolio-website-using-JS-HTML-CSS",
-    "description": "Designed and deployed a responsive personal portfolio website using HTML, CSS, and JavaScript.",
-    "language": ["HTML", "CSS", "JavaScript", "Responsive Design", "Flexbox", "Media Queries", "DOM Manipulation"],
-    "link": "https://github.com/arunmishrarut/Portfolio-website-using-JS-HTML-css.git"
-  },
-  {
-    "name": "Ensembled-Model-Credit-Card-Fraud-Detection",
-    "description": "Developed an ensemble ML model to detect fraudulent credit card transactions with improved precision.",
-    "language": ["Python", "Jupyter Notebook", "XGBoost", "Random Forest", "SMOTE", "Scikit-learn", "Pandas", "Seaborn"],
-    "link": "https://github.com/arunmishrarut/ensembled_model_credit_card_fraud_detection"
-  },
-  {
-    "name": "Bellman-Conformal-Inference-BCI-Time-Series-Prediction",
-    "description": "Implemented Bellman Conformal Inference to generate reliable prediction intervals for time series forecasting.",
-    "language": ["Python", "Conformal Prediction", "Bellman Equation", "Scikit-learn", "Statsmodels"],
-    "link": "https://github.com/arunmishrarut/Bellman_Conformal_Inference_BCI_Time_Series_Prediction"
-  },
-  {
-    "name": "Dengue-Prediction-Model",
-    "description": "Built regression-based models to predict dengue outbreaks using historical and environmental data.",
-    "language": ["Python", "Jupyter Notebook", "Linear Regression", "Random Forest", "Pandas", "Matplotlib", "Scikit-learn"],
-    "link": "https://github.com/arunmishrarut/Dengue_Prediction_Model"
-  },
-  {
-    "name": "Regression-Analysis-on-Household-Victimization",
-    "description": "Performed regression analysis to identify key factors associated with household victimization rates.",
-    "language": ["Python", "OLS Regression", "Pandas", "Matplotlib", "Seaborn", "Statsmodels"],
-    "link": "https://github.com/arunmishrarut/Regression_Analysis_on_Household_Victimization"
-  },
-  {
-    "name": "Bayesian-Logistic-Regression-for-Diabetes-Prediction",
-    "description": "Applied Bayesian logistic regression to predict diabetes risk while quantifying model uncertainty.",
-    "language": ["Python", "Bayesian Inference", "PyMC3", "Theano", "Scikit-learn", "Pandas"],
-    "link": "https://github.com/arunmishrarut/Bayesian_Logistic_Regression_for_Diabetes_Prediction"
-  },
-  {
-    "name": "Twitter-Search-App",
-    "description": "Built a Python-based search interface leveraging the Twitter API to retrieve and display real-time tweets.",
-    "language": ["Python", "Jupyter Notebook", "Tweepy", "Twitter API", "Pandas", "Streamlit"],
-    "link": "https://github.com/arunmishrarut/Twitter_Search_App"
-  },
-  {
-    "name": "Sentiment-Analysis-of-Popular-Songs-Lyrics",
-    "description": "Performed sentiment analysis on song lyrics to uncover emotional trends across popular music.",
-    "language": ["R", "tidytext", "ggplot2", "dplyr", "tm", "wordcloud"],
-    "link": "https://github.com/arunmishrarut/Sentiment_Analysis_of_Popular_Songs-Lyrics-"
-  }
-];
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
-  // Populate profile
-  document.getElementById("name").textContent   = profileData.name;
-  document.getElementById("bio").textContent    = profileData.bio;
+  // Profile data and projects
+  const profileData = {
+    name: "Arun Mishra",
+    bio: "Data Scientist | Data Analyst ",
+    github: "arunmishrarut",
+    email: "john@example.com",
+    location: "San Francisco, CA",
+    profileImg: "assets/profile.jpeg"
+  };
+
+  const projects = [
+    {
+      "name": "Diffusion-Models-Time-Series-Forecasting",
+      "description": "Built generative diffusion-based models to forecast complex time series patterns with higher accuracy.",
+      "language": ["Python", "Jupyter Notebook", "PyTorch", "Diffusion Models", "NumPy", "Pandas", "Matplotlib"],
+      "link": "https://github.com/rohit-vernekar/Diffusion-Models-Time-Series-Forecasting"
+    },
+    {
+      "name": "Portfolio-website-using-JS-HTML-CSS",
+      "description": "Designed and deployed a responsive personal portfolio website using HTML, CSS, and JavaScript.",
+      "language": ["HTML", "CSS", "JavaScript", "Responsive Design", "Flexbox", "Media Queries", "DOM Manipulation"],
+      "link": "https://github.com/arunmishrarut/Portfolio-website-using-JS-HTML-css.git"
+    },
+    {
+      "name": "Ensembled-Model-Credit-Card-Fraud-Detection",
+      "description": "Developed an ensemble ML model to detect fraudulent credit card transactions with improved precision.",
+      "language": ["Python", "Jupyter Notebook", "XGBoost", "Random Forest", "SMOTE", "Scikit-learn", "Pandas", "Seaborn"],
+      "link": "https://github.com/arunmishrarut/ensembled_model_credit_card_fraud_detection"
+    },
+    {
+      "name": "Bellman-Conformal-Inference-BCI-Time-Series-Prediction",
+      "description": "Implemented Bellman Conformal Inference to generate reliable prediction intervals for time series forecasting.",
+      "language": ["Python", "Conformal Prediction", "Bellman Equation", "Scikit-learn", "Statsmodels"],
+      "link": "https://github.com/arunmishrarut/Bellman_Conformal_Inference_BCI_Time_Series_Prediction"
+    },
+    {
+      "name": "Dengue-Prediction-Model",
+      "description": "Built regression-based models to predict dengue outbreaks using historical and environmental data.",
+      "language": ["Python", "Jupyter Notebook", "Linear Regression", "Random Forest", "Pandas", "Matplotlib", "Scikit-learn"],
+      "link": "https://github.com/arunmishrarut/Dengue_Prediction_Model"
+    },
+    {
+      "name": "Regression-Analysis-on-Household-Victimization",
+      "description": "Performed regression analysis to identify key factors associated with household victimization rates.",
+      "language": ["Python", "OLS Regression", "Pandas", "Matplotlib", "Seaborn", "Statsmodels"],
+      "link": "https://github.com/arunmishrarut/Regression_Analysis_on_Household_Victimization"
+    },
+    {
+      "name": "Bayesian-Logistic-Regression-for-Diabetes-Prediction",
+      "description": "Applied Bayesian logistic regression to predict diabetes risk while quantifying model uncertainty.",
+      "language": ["Python", "Bayesian Inference", "PyMC3", "Theano", "Scikit-learn", "Pandas"],
+      "link": "https://github.com/arunmishrarut/Bayesian_Logistic_Regression_for_Diabetes_Prediction"
+    },
+    {
+      "name": "Twitter-Search-App",
+      "description": "Built a Python-based search interface leveraging the Twitter API to retrieve and display real-time tweets.",
+      "language": ["Python", "Jupyter Notebook", "Tweepy", "Twitter API", "Pandas", "Streamlit"],
+      "link": "https://github.com/arunmishrarut/Twitter_Search_App"
+    },
+    {
+      "name": "Sentiment-Analysis-of-Popular-Songs-Lyrics",
+      "description": "Performed sentiment analysis on song lyrics to uncover emotional trends across popular music.",
+      "language": ["R", "tidytext", "ggplot2", "dplyr", "tm", "wordcloud"],
+      "link": "https://github.com/arunmishrarut/Sentiment_Analysis_of_Popular_Songs-Lyrics-"
+    }
+  ];
+
+  // Populate profile information
+  document.getElementById("name").textContent = profileData.name;
+  document.getElementById("bio").textContent = profileData.bio;
   document.getElementById("github").textContent = "@" + profileData.github;
-  document.getElementById("github").href        = `https://github.com/${profileData.github}`;
-  document.getElementById("email").textContent  = profileData.email;
-  document.getElementById("email").href         = `mailto:${profileData.email}`;
+  document.getElementById("github").href = `https://github.com/${profileData.github}`;
+  document.getElementById("email").textContent = profileData.email;
+  document.getElementById("email").href = `mailto:${profileData.email}`;
   document.getElementById("location").textContent = profileData.location;
-  document.getElementById("profile-img").src    = profileData.profileImg;
+  document.getElementById("profile-img").src = profileData.profileImg;
 
   // Populate projects grid
   const container = document.getElementById("projects-container");
@@ -95,14 +94,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Panel elements
-  const homePanel     = document.getElementById("home-panel");
+  const homePanel = document.getElementById("home-panel");
   const projectsPanel = document.getElementById("projects-panel");
-  const resumePanel   = document.getElementById("resume-panel");
+  const resumePanel = document.getElementById("resume-panel");
 
   // Nav links
   const projectsLink = document.querySelector('a[href="#projects-panel"]');
-  const resumeLink   = document.querySelector('a[href="#resume-panel"]');
-  const homeLink     = document.querySelector('a[href="#home-panel"]');
+  const resumeLink = document.querySelector('a[href="#resume-panel"]');
+  const homeLink = document.querySelector('a[href="#home-panel"]');
 
   // Show Projects
   if (projectsLink) {
@@ -134,33 +133,31 @@ document.addEventListener("DOMContentLoaded", () => {
   if (homeLink) {
     homeLink.addEventListener("click", showHome);
   }
+
+  // Zoom logic for resume iframe with null checks
+  const iframe = document.getElementById("resume-iframe");
+  const btnIn = document.getElementById("zoom-in");
+  const btnOut = document.getElementById("zoom-out");
+
+  // Only add event listeners if elements exist
+  if (iframe && btnIn && btnOut) {
+    let zoomLevel = 1;
+    const ZOOM_STEP = 0.1;
+    const MIN_ZOOM = 0.5;
+    const MAX_ZOOM = 3;
+
+    function updateZoom() {
+      iframe.style.transform = `scale(${zoomLevel})`;
+    }
+
+    btnIn.addEventListener("click", () => {
+      zoomLevel = Math.min(zoomLevel + ZOOM_STEP, MAX_ZOOM);
+      updateZoom();
+    });
+
+    btnOut.addEventListener("click", () => {
+      zoomLevel = Math.max(zoomLevel - ZOOM_STEP, MIN_ZOOM);
+      updateZoom();
+    });
+  }
 });
-
-// Zoom logic for resume iframe
-let zoomLevel = 1;
-const ZOOM_STEP = 0.1;
-const MIN_ZOOM = 0.5;
-const MAX_ZOOM = 3;
-const iframe = document.getElementById("resume-iframe");
-const btnIn  = document.getElementById("zoom-in");
-const btnOut = document.getElementById("zoom-out");
-
-function updateZoom() {
-  iframe.style.transform = `scale(${zoomLevel})`;
-  // optionally adjust iframe container scrollbars if needed
-}
-
-btnIn.addEventListener("click", () => {
-  zoomLevel = Math.min(zoomLevel + ZOOM_STEP, MAX_ZOOM);
-  updateZoom();
-});
-
-btnOut.addEventListener("click", () => {
-  zoomLevel = Math.max(zoomLevel - ZOOM_STEP, MIN_ZOOM);
-  updateZoom();
-});
-
-
-
-
-
