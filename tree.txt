@@ -6,26 +6,3 @@
       ├── profile.jpg       ← your profile photo
       ├── favicon.ico       ← optional: browser tab icon
       └── logo.png          ← optional: personal or brand logo
-
-
-
-
-  <script src="script.js"></script>
-  <script type="module">
-    import WebGLFluidEnhanced from "https://esm.run/webgl-fluid-enhanced@latest";
-    
-    // Create the simulation instance
-    const simulation = new WebGLFluidEnhanced();
-    
-    // Configure the simulation (before starting)
-    simulation.setConfig({
-      colorPalette: ['#1a73e8', '#586069', '#24292e'],
-      backgroundColor: '#fff',
-      hover: true,
-      bloom: false,
-      brightness: 0.5
-    });
-    
-    // Start the simulation
-    simulation.start();
-  </script>

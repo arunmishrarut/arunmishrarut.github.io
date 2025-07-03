@@ -1,4 +1,38 @@
-  // script.js
+// script.js
+
+
+
+
+window.addEventListener("DOMContentLoaded", function() {
+  if (window.webGLFluidEnhanced) {
+    // Get or create the canvas
+    let canvas = document.getElementById('fluid-canvas');
+    if (!canvas) {
+      canvas = document.createElement('canvas');
+      canvas.id = 'fluid-canvas';
+      document.body.prepend(canvas);
+    }
+    // Style the canvas to cover the background
+    canvas.style.position = 'fixed';
+    canvas.style.inset = '0';
+    canvas.style.width = '100vw';
+    canvas.style.height = '100vh';
+    canvas.style.zIndex = '-1';
+    canvas.style.pointerEvents = 'none';
+
+    // Start the simulation
+    window.webGLFluidEnhanced.simulation(canvas, {
+      COLOR_PALETTE: ['#1a73e8', '#586069', '#24292e'],
+      BACK_COLOR: '#fff',
+      HOVER: true,
+      BLOOM: false,
+      BRIGHTNESS: 0.5
+    });
+  }
+});
+
+
+
 const profileData = {
   name: "Arun Mishra",
   bio: "Data Scientist | Data Analyst ",
@@ -135,4 +169,32 @@ document.addEventListener("DOMContentLoaded", () => {
     homeLink.addEventListener("click", showHome);
   }
 });
+
+// Zoom logic for resume iframe
+let zoomLevel = 1;
+const ZOOM_STEP = 0.1;
+const MIN_ZOOM = 0.5;
+const MAX_ZOOM = 3;
+const iframe = document.getElementById("resume-iframe");
+const btnIn  = document.getElementById("zoom-in");
+const btnOut = document.getElementById("zoom-out");
+
+function updateZoom() {
+  iframe.style.transform = `scale(${zoomLevel})`;
+  // optionally adjust iframe container scrollbars if needed
+}
+
+btnIn.addEventListener("click", () => {
+  zoomLevel = Math.min(zoomLevel + ZOOM_STEP, MAX_ZOOM);
+  updateZoom();
+});
+
+btnOut.addEventListener("click", () => {
+  zoomLevel = Math.max(zoomLevel - ZOOM_STEP, MIN_ZOOM);
+  updateZoom();
+});
+
+
+
+
 
