@@ -188,19 +188,19 @@
     
     // Configure the simulation (before starting)
     simulation.setConfig({
-      colorPalette: ["#0366d6"],
+      colorPalette: ['#0366d6'],
       backgroundColor: '#ffffff',
-      hover: true,
+      densityDissipation: 3,
+      colorUpdateSpeed: 5,
+      hover: false,
+      brightness: 0.6,
+      velocityDissipation: 0.5,
       bloom: false,
-      brightness: 0.3
     });
     
     // Start the simulation
     simulation.start();
   </script>
-
-
-  
 
  
 </body>
